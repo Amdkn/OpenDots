@@ -6,7 +6,7 @@
   "license": "MIT",
   "description": "A'Space adapter for Amdkn/OpenDots (gel d4214af, F8 pas 7) — stdlib only, no upstream code",
   "scripts": {
-    "test": "node --test tests/adapter.test.ts"
+    "test": "node --test tests/adapter.checks.ts"
   },
   "aspace": {
     "gel": "d4214aff10f066911f3253cb3cb870764cd51a9f",

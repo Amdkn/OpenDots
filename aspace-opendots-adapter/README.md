@@ -14,4 +14,5 @@ version amont 0.1.0, statut amont Alpha, 207 fichiers au gel.
   `src/telemetry.ts`.
 - Dépendance pas 6 NOMMÉE (§D9) : `/refine` conditionnel au merge de `9050a1f`.
 
-Suite : `bun test` / `node --test` selon le `package.json` (stdlib seule).
+Suite : `bun test tests/adapter.checks.ts` / `node --test tests/adapter.checks.ts` selon le `package.json` (stdlib seule).
+Le fichier s'appelle `.checks.ts` (pas `.test.ts`) pour que les suites des forks ne le ramassent pas.
