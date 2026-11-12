@@ -1,0 +1,68 @@
+{
+  "adapter": "aspace-opendots-adapter",
+  "version": "0.1.0",
+  "fork": "Amdkn/OpenDots",
+  "upstream": "CopilotKit/OpenDots",
+  "gel": "d4214aff10f066911f3253cb3cb870764cd51a9f",
+  "gel_short": "d4214af",
+  "bind": "abcb35dba4fadeb25c568db3a544d9c1ef19863d",
+  "bind_blob": "83c6b9bf5fa7dc15d1228301db74e7b0616ce565",
+  "family": "CORE_A0_KERNEL",
+  "owner": "A0-AMADEUS / S1-RICK",
+  "license": "MIT",
+  "skin": {
+    "id": "opendots",
+    "name": "OpenDots",
+    "kind": "skin",
+    "trait": "always-on : coworkers persistants, texte / appels / Slack, revue avant sauvegarde"
+  },
+  "gateway": {
+    "endpoint": "http://127.0.0.1:31415/v1/chat/completions",
+    "chain": [
+      "freellmapi/auto",
+      "claude-sonnet-4-5",
+      "qwen3.8-max",
+      "gemini-3.8-flash",
+      "deepseek-v4-flash"
+    ],
+    "retest_minutes": 15,
+    "forbidden_keys": [
+      "CPK_INTELLIGENCE_API_KEY",
+      "CPK_TELEMETRY_ID",
+      "OPENAI_API_KEY"
+    ]
+  },
+  "computer_service": {
+    "port": 4100,
+    "header": "x-openbot-bot-id"
+  },
+  "triage": {
+    "ported": 6,
+    "surfaces": 3,
+    "abandoned": 4,
+    "total": 13
+  },
+  "telemetry_triggers": {
+    "sink-sdk": {
+      "applies": "APPLIQUE",
+      "verdict": "ABANDONNÉ"
+    },
+    "product-telemetry": {
+      "applies": "N/A",
+      "verdict": "N/A"
+    },
+    "desktop-telemetry": {
+      "applies": "N/A",
+      "verdict": "N/A"
+    },
+    "setup-telemetry": {
+      "applies": "APPLIQUE",
+      "verdict": "ABANDONNÉ"
+    },
+    "otel-export": {
+      "applies": "N/A",
+      "verdict": "N/A"
+    }
+  },
+  "dependency_pas6": "NAMED — fonctions prime-agent (RLM, /refine, Continual Harness) absentes de la base 655b2a4 ; le chemin /refine de la surface est conditionnel au merge de 9050a1f ; le reste est inconditionnel (§D9)"
+}

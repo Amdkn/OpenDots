@@ -1,0 +1,17 @@
+{
+  "name": "@aspace-v5/opendots-adapter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "A'Space adapter for Amdkn/OpenDots (gel d4214af, F8 pas 7) — stdlib only, no upstream code",
+  "scripts": {
+    "test": "node --test tests/adapter.test.ts"
+  },
+  "aspace": {
+    "gel": "d4214aff10f066911f3253cb3cb870764cd51a9f",
+    "bind": "abcb35dba4fadeb25c568db3a544d9c1ef19863d",
+    "fork": "Amdkn/OpenDots",
+    "skin": "opendots"
+  }
+}
